@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Me</title>
+    </head>
+
+    <link href='https://fonts.googleapis.com/css?family=Notable' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Mukta' rel='stylesheet'>
+
+    <style>
+
+        h1 {
+            font-family: cursive;
+        }
+
+
+        h2 {
+            text-align: center; 
+            font-size: 35px;
+            font-family:'Notable';
+        }
+
+        h3 {
+            position: absolute;
+            font-size: 30px;
+            font-family: 'Trebuchet MS', sans-serif;
+            top: 180px;
+        }
+
+        ul {
+            font-size: 15px; 
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        img {
+            width: 15%;
+        }
+
+        a {
+            color: #327ba8;
+        }
+
+        a:visited {
+            color: #327ba8;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        .sectionBreak {
+            margin-top: 50px;
+        }
+
+        .hobbies {
+            padding-bottom: 200px;
+            width: 100%;
+        }
+
+        .hobbiesImg {
+            position: absolute;
+            border-radius: 20px;
+            margin: 5px;
+        }
+
+        /* pop up for image */
+        .container {
+            width: 100%;
+            position: relative;
+            display: inline-block;
+        }
+        .container:hover .popup{
+            display: block;
+        }
+        .popup {
+            display: none;
+            position: absolute;
+            padding: 5px;
+            width: 15%;
+            border: #5ba6d4 3px solid;
+            background-color: azure;
+            color: #23a1eb;
+            top: 150px;
+            z-index: 5;
+            text-align: left;
+        }
+
+        .animeContainer {
+            position: relative;
+            display: block;
+            width: 50%;
+        }
+
+        .anime {
+            position: absolute;
+        }
+
+
+        .project {
+            font-size: 25px;
+            font-family: 'Mukta';
+            width: 100%;
+        }
+
+        .slideshow {
+            position: relative;
+            display: block;
+            width: 60%;
+            left: 12%;
+            height: 50%;
+            padding-bottom: 45%;
+        }
+
+        .slideshowImg {
+            display: none;
+            position: absolute;
+            width:100%;
+            left: 15%;
+        }
+
+        .slideshowBtn {
+            position: absolute;
+            z-index: 5;
+            top:40%;
+            font-size: 20px;
+            padding: 10px;
+            background-color: #c76df7;
+            border: 20px;
+        }
+
+        .slideshowBtn:hover {
+            background-color: #db9dfc;
+        }
+
+        .slideshowBtn:active {
+            background-color: #b945f7;
+        }
+
+        .slideshowNum {
+            position: absolute;
+            left:15%;
+            z-index: 5;
+            font-size: 15px;
+        }
+
+        .locations {
+            position: relative;
+            display: block;
+            width: 65%;
+            height:10%;
+        }
+
+        .location {
+            position: absolute;
+        }
+
+        .top {
+            display: none;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            margin: 10px;
+            padding: 20px 5px;
+            font-size: 15px;
+            color:#ffb5e6;
+            background-color: #38a5ff;
+            border-radius: 20px;
+        }
+
+        .top:hover {
+            background-color: #7ac3ff;
+        }
+
+        .top:active {
+            background-color: #1286e6;
+        }
+
+    </style>
+
+    <body style="text-align: center;">
+        <h1 style="font-size: 100px;">Lillian Ye</h1>
+        <hr class="sectionBreak">
+        <h2>Hobbies</h2>
+        <hr>
+        <div class="hobbies">
+            <a href="https://genshin.mihoyo.com/en/home" target="_blank"><img src="https://www.dexerto.com/wp-content/uploads/2021/09/20/Genshin-Impact-Anniversary-details.jpeg" alt="Genshin Impact" class="hobbiesImg" style="right: 22%; top:60%; border-radius: 0;"/></a>
+            
+            <div class="animeContainer">
+                <a href="https://myanimelist.net/anime/38000/Kimetsu_no_Yaiba" target="_blank"><img src="https://www.whats-on-netflix.com/wp-content/uploads/2021/01/demon-slayer-kimetsu-no-yaiba-season-1-coming-to-netflix.jpg" alt="Kimetsu no Yaiba" class="anime" style="width: 20%; top:25px" /></a>
+                <a href="https://myanimelist.net/anime/33352/Violet_Evergarden" target="_blank"><img src="https://static.wikia.nocookie.net/violet-evergarden/images/a/ae/Violet_Evergarden.png/revision/latest?cb=20180209195829" alt="Violet Evergarden" class="anime" style="top:100px; right: 25%;"/></a>
+                <a href="" target="_blank"><img src="https://external-preview.redd.it/9kRvFquAMUx1ykO32utXzby0yUVIw49d4NWf15L5JnY.jpg?auto=webp&s=b7e5a40b29229192fc63a1f0215b0471cf640355" alt="Ansatsu Kyoshitsu" class="anime" style="top:60px; right: 20%;" onclick="window.open('https://myanimelist.net/anime/24833/Ansatsu_Kyoushitsu', '_blank');"/></a>
+                <a href="" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/en/3/35/Dr_Stone_Blu-ray_Disc_Box_1.jpg" alt="Dr Stone" class="anime" style="left:45%; top:60px; " onclick="window.open('https://myanimelist.net/anime/38691/Dr_Stone', '_blank');"/></a>
+            </div>
+
+            <div class="container">
+                <img src="https://media.istockphoto.com/vectors/music-note-icon-vector-illustration-vector-id1175435360?k=20&m=1175435360&s=612x612&w=0&h=1yoTgUwobvdFlNxUQtB7_NnWOUD83XOMZHvxUzkOJJs=" alt="Music" class="hobbiesImg" style="left:45%;"/>
+                <div class="popup" style="left:45%; border-radius: 10px;">
+                    <p style="font-size: 18px; text-align: center;">Favorite Songs</p>
+                    <ul>
+                        <a href="https://www.youtube.com/watch?v=cbqvxDTLMps" target="_blank"><li>Betelgeuse - Yuuri</li></a>
+                        <a href="https://www.youtube.com/watch?v=-EKxzId_Sj4" target="_blank"><li>Eine Kleine - Kenshi Yonezu</li></a>
+                        <a href="https://www.youtube.com/watch?v=InupuylYdcY" target="_blank"><li>Satisfied - Renée Elise Goldsberry</li></a>
+                        <a href="https://www.youtube.com/watch?v=OblL026SvD4" target="_blank"><li>Still Into You - Paramore</li></a>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <img src="https://media.wired.com/photos/5955c3573ff99d6b3a1d165c/master/pass/books.jpg" alt="Books" class="hobbiesImg" style="left: 0; top:55px;"/>
+                <div class="popup" style="left: 0%; border-radius: 20px;">
+                    <ul>
+                        <li>Invictus - Ryan Graudin</li>
+                        <li>Percy Jackson and the Olympians series - Rick Riordan</li>
+                        <li>One Of Us Is Lying - Karen M. McManus</li>
+                        <li>Gone series - Michael Grant</li>
+                    </ul>
+
+                </div> 
+            </div>
+
+            
+            <div class="container">
+                <img src="https://i.insider.com/60144316a7c0c4001991dde6?width=1000&format=jpeg&auto=webp" alt="Picture of code" class="hobbiesImg" style="width:18%; left:80%;" />
+                <div class="popup" style="left: 81%;">
+                    <ul>
+                        <li>Coding since grade 6</li>
+                        <li>Knowledge in Python, Java, Html CSS JS</li>
+                    </ul>
+
+                </div> 
+            </div>
+            
+        </div>
+        <br>
+        <br>
+
+        <hr class="sectionBreak">
+        <h2>Notable Projects: </h2>
+        <hr>
+        <br>
+
+        <div class="projects">
+            <a href="https://github.com/Xreflextion/MentalDisorders" target="_blank" class="project">Mental Disorders Website</a>
+            <p>A html project made in grade 7 explaining types of mental disorders and their treatment.</p>
+            
+            <div class="slideshow" id="disorders">
+                <img src="https://drive.google.com/uc?id=1LIn3vwVFn-OUFauZElWskWeN6YIFKfIH" alt="Home page" class="slideshowImg" style="display: initial;" />
+                <img src="https://drive.google.com/uc?id=1y2e-HYVZz-95eoMQFUAfMaLbPhGwbo9i" alt="Causes" class="slideshowImg"/>
+                <img src="https://drive.google.com/uc?id=1ITFnzzwIrtsvepLPraBL1CD24Rg46n_4" alt="Dropdown of types" class="slideshowImg"/>
+                <img src="https://drive.google.com/uc?id=1KlJbswoC4RM-HVbaT6aQT7-LloukjCIt" alt="About neurodevelopment disorders" class="slideshowImg"/>
+                <img src="https://drive.google.com/uc?id=1awZuL3R-CZzsE1GQzyhfOhmVM7TvW_Tr" alt="General treatment" class="slideshowImg"/>
+
+                <button type="button" class="slideshowBtn" style="left:7%;" onclick="changePhoto(-1, 'disorders')">Prev</button>
+                <button type="button" class="slideshowBtn" style="right: -22%;" onclick="changePhoto(1, 'disorders')">Next</button>
+                <p class="slideshowNum" id="disordersNum" style="bottom:22%;">1/5</p>
+            </div>
+
+            <br>
+        </div>
+
+
+        <div class="projects">
+            <a href="https://github.com/Xreflextion/Shiawase" target="_blank" class="project">Shiawase Website</a>
+            <p>A website made using flask with a database.</p>
+
+            <div class="slideshow" id="shiawase">
+                <img src="https://drive.google.com/uc?id=1YDXn53pSobolX768ssAfrWJ9nu6t2zZD" alt="Register Account" class="slideshowImg" style="display: initial;" />
+                <img src="https://drive.google.com/uc?id=1r5PAvJeA8eDW-XKAIL7MrDjThYDArSIm" alt="Created new account" class="slideshowImg"/>
+                <img src="https://drive.google.com/uc?id=1w3M6GiBkMof6AxuIl1rhifZxpfhcwmnC" alt="Birthday" class="slideshowImg"/>
+                <img src="https://drive.google.com/uc?id=1kr4JG7itPkUugNEKkPv0VgluZGkij67_" alt="Menu" class="slideshowImg"/>
+                <img src="https://drive.google.com/uc?id=1cS18cmVwUkL3IknT8G5rHkMmSta-App8" alt="Order Dish" class="slideshowImg"/>
+
+                <button type="button" class="slideshowBtn" style="left:15%;" onclick="changePhoto(-1, 'shiawase')">Prev</button>
+                <button type="button" class="slideshowBtn" style="right: -15%;" onclick="changePhoto(1, 'shiawase')">Next</button>
+                <p class="slideshowNum" id="shiawaseNum" style="bottom:22%;">1/5</p>
+            </div>
+
+            <br>
+        </div>
+
+        <div class="projects">
+            <a href="https://github.com/Xreflextion/MitosisMeiosis" target="_blank" class="project">Mitosis Meiosis App</a>
+            <p>An Android Studio app explaining mitosis and meiosis with an interactive quiz.</p>
+
+            <div class="slideshow" id="mitoMeio" style="width: 20%;left: 38%; height:10%;">
+                <img src="https://drive.google.com/uc?id=1f4cLSRWcju-5HKVswQKBrOIOobw5vc8X" alt="Information about mitosis" class="slideshowImg" style="display: initial;" />
+                <img src="https://drive.google.com/uc?id=1znRFk-eGqdryObd3vJnS4hxganaHZK5Z" alt="Information about meiosis" class="slideshowImg" />
+                <img src="https://drive.google.com/uc?id=1zz0VvhSdNXcCI42uW6a9viW5i8Ew-NTs" alt="Quiz start" class="slideshowImg"/>
+                <img src="https://drive.google.com/uc?id=12ERgG_Km96B05FCeQM-aMx4gcJJdGnz9" alt="Question 1" class="slideshowImg"/>
+                <img src="https://drive.google.com/uc?id=1XB2IVBjZ92g5eZo7pNbWCkx2uZCLRhQM" alt="Answer 1" class="slideshowImg"/>
+                <img src="https://drive.google.com/uc?id=1xsF0UYs7DEZtdy15NJjBVSxo-ZgsafeL" alt="Question 2" class="slideshowImg"/>
+                <img src="https://drive.google.com/uc?id=1lUFVsi40-OGeQFlEjYhcFb8RXV-yBhoX" alt="Answer 2" class="slideshowImg"/>
+                <img src="https://drive.google.com/uc?id=1Mv8HUCovTqace-4JY_fnoUWp6ToZzGmc" alt="Question 3" class="slideshowImg"/>
+                <img src="https://drive.google.com/uc?id=1X-PjyCq7ZyZN4vX2821bSFJW22OFcsUM" alt="Answer 3" class="slideshowImg"/>
+                <img src="https://drive.google.com/uc?id=1XeOETGqRy8rOxLkDTG6VEUbBnn172Dd1" alt="End of quiz" class="slideshowImg" />
+
+                <button type="button" class="slideshowBtn" style="left:-5%;" onclick="changePhoto(-1, 'mitoMeio')">Prev</button>
+                <button type="button" class="slideshowBtn" style="right: -32%;" onclick="changePhoto(1, 'mitoMeio')">Next</button>
+                <p class="slideshowNum" id="mitoMeioNum" style="bottom:0%;">1/10</p>
+            </div>
+
+            <br>
+        </div>
+
+        <hr class="sectionBreak">
+        <h2>Visited Locations</h2>
+        <hr>
+        <br>
+
+        <!-- Toronto -->
+        <div class="locations" style="width: 80%; padding-bottom: 35%;">
+            <a href="https://niagarafalls.ca/" target="_blank"><img src="https://drive.google.com/thumbnail?id=1hKMWWYvzP82oU0QnKtSWddx4RMnpuw5T" alt="Niagara Falls" class="location" style="left:5%; top:10px;" /></a>
+            <a href="http://www.riddleroom.ca/" target="_blank"><img src="https://drive.google.com/thumbnail?id=1Aj79_kNI_mfI8XmvmETtU3r8ogxwWGJw" alt="Riddle Room" class="location" style="left:16%; top:100px;" /></a>
+            <a href="https://junglecatworld.com/" target="_blank"><img src="https://drive.google.com/thumbnail?id=1h0_J7Zv54DSKyylhGoVMVwm5UWhYbgss" alt="Jungle Cat World Wildlife" class="location" style="width:10%; left:30%; top:50px;" /></a>
+            <img src="https://drive.google.com/thumbnail?id=19SY94gX_c47AdIAFjTYvVMTNRZr48Xad" alt="Toronto Christmas Market" class="location" style="width:10%; left:40%; top:100px;"/>
+            <img src="https://drive.google.com/thumbnail?id=13uUsEDnluphDdFkYAX5-ZpErD6gEAQ6D" alt="View of Toronto" class="location" style="left:70%; top:150px;"/>
+            <a href="https://www.puttingedge.com/" target="_blank"><img src="https://drive.google.com/thumbnail?id=1LYRGFeKK0Im-raEKn-H6WlPB3R34aLVO" alt="Golf" class="location" style="left:100%; top:40px;" /></a>
+            <a href="https://www.imaginarium.ca/" target="_blank"><img src="https://drive.google.com/thumbnail?id=1t91T4lsaybMLit-q0Z0bAFpo8ODopgBx" alt="Imaginarium escape room" class="location" style="left:75%;" /></a>
+            <img src="https://drive.google.com/thumbnail?id=1VbxXjcAI4lorwS_5r1ONEhBLxqE_rt1d" alt="Cherry picking" class="location" style="left:50%;"/>
+            <img src="https://drive.google.com/thumbnail?id=1xP5aQ6MssRmlA0VxqXRdICQljp5iNvaz" alt="Cat cafe" class="location" style="left:63%; top:60px;"/>
+            <a href="" target="_blank"><img src="https://drive.google.com/thumbnail?id=1JcHol73U0QWcCrOcOxPSMqxdYdDzY1Ck" alt="Toronto sign" class="location" style="left:87%; top:100px;"/>
+            <a href="https://crockadoodle.com/" target="_blank"><img src="https://drive.google.com/thumbnail?id=1TNj2il8XR4M8-f7Psy4-EfzIgBm2G7OV" alt="Painting cups" class="location" style="left:0%; top:90px; width:12%;" /></a>
+
+            <h3 style="left:55%; padding-top:50px"><u>Toronto</u></h3>
+        </div>
+        <br>
+        <br>
+
+        <!-- Banff -->
+        <div class="locations" style="left:35%;">
+            <a href="https://www.banfflakelouise.com/lake-minnewanka" target="_blank"><img src="https://drive.google.com/thumbnail?id=15LDXDozztonHgfP5oTYY6f8QvMYXLN8T" alt="Lake Minnewanka" class="location" style="left:50%; top:30px;" /></a>
+            <a href="https://www.banfflakelouise.com/" target="_blank"><img src="https://drive.google.com/thumbnail?id=1f1OyR3odJP-TRGRcLvHwVUPU6IftATzO" alt="Lake Louise" class="location" style="left:30%; width:20%; top:20px;" /></a>
+            <a href="https://www.banffjaspercollection.com/attractions/banff-gondola/" target="_blank"> <img src="https://drive.google.com/thumbnail?id=1S-lPPRxsZl63xTczhAOsdiRH6comfPMm" alt="Banff Gondola" class="location" style="left:40%; top:100px;" /></a>
+            <a href="https://www.tripadvisor.ca/Attraction_Review-g1761683-d155619-Reviews-Emerald_Lake-Yoho_National_Park_Kootenay_Rockies_British_Columbia.html" target="_blank"> <img src="https://drive.google.com/thumbnail?id=13wl2h8DNxmqoKM72IaQ5ZdQmidNNizHd" alt="Emerald Lake at Yoho National Park" class="location" style="left:20%; top:80px;" /></a>
+            <!-- <img src="https://drive.google.com/thumbnail?id=" alt="" class="location" style="" /> -->
+
+            <h3 style="left:40%;"><u>Banff</u></h3>
+        </div>
+        <br>
+
+        <!-- Victoria -->
+        <div class="locations">
+            <a href="https://www.butchartgardens.com/" target="_blank"><img src="https://drive.google.com/thumbnail?id=1PQHQs47gG375zAzFy5Q_wjrT-QHo-iPv" alt="Buchart Gardens waterfall" class="location" style="left:45%;top:20px;" /></a>
+            <a href="http://hatleycastle.com/" target="_blank"><img src="https://drive.google.com/thumbnail?id=1Hi1GVt4KUr-uT5mgI-5O_2RjCB7g34CS" alt="Hatley Castle" class="location" style="left:18%; top:10px;" /></a>
+            <a href="https://www.tourismvictoria.com/see-do/activities-attractions/attractions/fan-tan-alley" target="_blank"><img src="https://drive.google.com/thumbnail?id=1VMC9tjYSnciswe99uhChaK3uaw9zaPM_" alt="Fan Tan Alley" class="location" style="width:12%; left:33%;" /></a>
+            <a href="https://www.colwood.ca/discover-colwood/points-of-interest/colwood-waterfront-esquimalt-lagoon" target="_blank"><img src="https://drive.google.com/thumbnail?id=1066Y9vwC0dfBXd-sfNpwihAjxzHDIabV" alt="Esquimalt Lagoon" class="location" style="left:40%; top:100px;" /></a>
+            <a href="https://www.butchartgardens.com/" target="_blank"><img src="https://drive.google.com/thumbnail?id=16Ic01n7rsbEJbL590SYQ7dkm1UVS9dnf" alt="Buchart Gardens fountain" class="location" style="left:15%; top:85px;" /></a>
+
+
+            <h3 style="left: 33%;"><u>Victoria</u></h3>
+        </div>
+
+        <button type="button" class="top" id="top" onclick="document.documentElement.scrollTop = 0;">To the Top</button>
+        
+        
+    </body>
+
+    <script>
+
+        function displayButton(id) {
+            var btn = document.getElementById(id);
+            if (window.scrollY > 5 && btn.style.display != "initial") {
+                btn.style.display = "initial";
+            } else if (window.scrollY <= 5 && btn.style.display != "none") {
+                btn.style.display = "none";
+            }
+        }
+        displayButton("top");
+        window.onscroll = function(e) {
+            displayButton("top");
+        }
+    
+        function changePhoto(dir, id) {
+            const elems = document.getElementById(id).childNodes;
+            var current;
+            const imgs = [];
+            for (var i = 1; i < elems.length - 7; i += 2) {
+                imgs.push(elems[i]);
+                if (elems[i].style.display == "initial") {
+                    current = imgs.length-1;
+                }
+
+            }
+
+            if (-1 < dir + current && dir + current < imgs.length) {
+                imgs[current].style.display = "none";
+                imgs[current+dir].style.display = "initial";
+                var p = document.getElementById(id+"Num");
+                p.innerHTML = current + dir + 1 + "/" + imgs.length;
+            }
+
+            
+        }
+
+    </script>
+
+</html>
